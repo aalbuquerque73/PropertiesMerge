@@ -1,0 +1,306 @@
+body {
+  display: flex;
+}
+board {
+    width: 100%;
+    height: 100%;
+}
+.board {
+  border: #000066 solid 1px;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+    height: 100%;
+}
+.board:last-child {
+  margin-bottom: 0;
+}
+.blackboard {
+  border: #000066 solid 1px;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 10px;
+  /*background-color: #000066;*/
+  padding: 5px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+.blackboard:last-child {
+  margin-bottom: 0;
+}
+.blackboard:last-child {
+  margin-bottom: 0;
+}
+.blackboard > div {
+  background-color: white;
+}
+.panel {
+  display: flex;
+  /*margin: 2px;*/
+  padding: 3px;
+    width: 100%;
+}
+.panel.menu .pane {
+  position: relative;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  bottom: -4px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.panel.menu .pane.active {
+  background-color: #000066;
+  color: #ffffff;
+}
+.panel.menu.stand {
+  margin: 0;
+  padding: 0;
+  border: #000066 solid 1px;
+  width: 100%;
+  height: 1px;
+}
+.pane {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  margin-right: 5px;
+  border: #000066 solid 1px;
+  border-radius: 3px;
+}
+.pane:last-child {
+  margin-right: 0;
+}
+.pane > .wrapper {
+  flex: 1 1 auto;
+  padding: 1px 5px;
+}
+.pane > .wrapper .row {
+  display: flex;
+  flex-direction: row;
+}
+.pane > .wrapper .row > label {
+  display: inline-block;
+  min-width: 80px;
+}
+.pane > .wrapper .row > input[type='text'] {
+  flex: 1 1 auto;
+}
+.pane hr {
+  border-color: #000066;
+  border-style: solid;
+}
+.pane textarea {
+    width: 100%;
+    white-space: nowrap;
+    border: none;
+}
+
+.whitepanel {
+  /*margin: 2px;*/
+  display: flex;
+  /*margin: 2px;*/
+  padding: 3px;
+  padding: 0;
+}
+.whitepanel.menu .pane {
+  position: relative;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  bottom: -4px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.whitepanel.menu .pane.active {
+  background-color: #000066;
+  color: #ffffff;
+}
+.whitepanel.menu.stand {
+  margin: 0;
+  padding: 0;
+  border: #000066 solid 1px;
+  width: 100%;
+  height: 1px;
+}
+.whitepanel.menu .pane {
+  position: relative;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  bottom: -4px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.whitepanel.menu .pane.active {
+  background-color: #000066;
+  color: #ffffff;
+}
+.whitepanel.menu.stand {
+  margin: 0;
+  padding: 0;
+  border: #000066 solid 1px;
+  width: 100%;
+  height: 1px;
+}
+.whitepane {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  margin-right: 5px;
+  border: #000066 solid 1px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.whitepane:last-child {
+  margin-right: 0;
+}
+.whitepane > .wrapper {
+  flex: 1 1 auto;
+  padding: 1px 5px;
+}
+.whitepane > .wrapper .row {
+  display: flex;
+  flex-direction: row;
+}
+.whitepane > .wrapper .row > label {
+  display: inline-block;
+  min-width: 80px;
+}
+.whitepane > .wrapper .row > input[type='text'] {
+  flex: 1 1 auto;
+}
+.whitepane hr {
+  border-color: #000066;
+  border-style: solid;
+}
+.whitepane:last-child {
+  margin-right: 0;
+}
+.whitepane > .wrapper {
+  flex: 1 1 auto;
+  padding: 1px 5px;
+}
+.whitepane > .wrapper .row {
+  display: flex;
+  flex-direction: row;
+}
+.whitepane > .wrapper .row > label {
+  display: inline-block;
+  min-width: 80px;
+}
+.whitepane > .wrapper .row > input[type='text'] {
+  flex: 1 1 auto;
+}
+.whitepane hr {
+  border-color: #000066;
+  border-style: solid;
+}
+.whitepanel-with-title {
+  padding: 1em 0 .5em;
+}
+.whitepanel-with-title .title {
+  position: relative;
+  left: -5px;
+  background-color: #000066;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px 5px 5px 1em;
+  margin-right: 7px;
+  margin-bottom: .5em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.even-odd div.row:nth-child(2n) {
+  background-color: rgba(191, 191, 191, 0.5);
+}
+.odd-even div.row:nth-child(2n+1) {
+  background-color: rgba(191, 191, 191, 0.5);
+}
+input[type='text'] {
+  border: #000066 solid 1px;
+  background-color: rgba(255, 255, 127, 0.25);
+  padding: 1px 3px;
+}
+input[readonly] {
+  background-color: transparent;
+}
+.cursor-pointer,
+.cursor-pointer * {
+  cursor: pointer;
+}
+.display-block {
+  display: block;
+}
+.flex {
+  display: flex;
+  flex: 1 1 auto;
+}
+.no-flex {
+  flex: none;
+}
+.popup-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10% 10%;
+  padding: 5px;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border: #000066 solid 1px;
+  border-radius: 5px;
+  z-index: 2;
+}
+.popup .panel {
+  flex: 1 1 auto;
+  display: block;
+  position: relative;
+  height: 53%;
+}
+.popup .panel textarea {
+  width: 100%;
+  height: 100%;
+}
+.popup .panel.one {
+  height: auto;
+}
+.popup textarea {
+  flex: 1 1 auto;
+}
+.toolbar {
+  display: block;
+  text-align: right;
+  padding: 3px 0 0;
+}
+.panel.toolbar {
+  margin-right: 3px;
+}
+.whitepanel.toolbar {
+  margin-right: 5px;
+}
+.whitepane.toolbar {
+  margin-right: 10px;
+}
+.top-left-square,
+.top-square {
+  border-top-left-radius: initial;
+}
+.top-right-square,
+.top-square {
+  border-top-right-radius: initial;
+}
+.button {
+  display: inline-block;
+  padding: 3px;
+  border: #000066 solid 1px;
+  border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+{
+	"name": "Web Server",
+	"main": "index.html",
+	"node-main": "app.js",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "nodemon app.js"
+	},
+	"dependencies": {
+	}
+}

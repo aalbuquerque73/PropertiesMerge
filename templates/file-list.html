@@ -1,0 +1,7 @@
+<div>
+    <div class="files" data-bind="foreach: files">
+        <show params="value: $data"></show>
+    </div>
+    <input type="file" value="Add File" data-bind="event: { change: addFile }" />
+    <button class="merge" data-bind="click: merge">Merge</button>
+</div>
